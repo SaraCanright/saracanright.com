@@ -47,7 +47,8 @@
   /* Header */
   header { padding: 40px 0 24px; }
   .masthead { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-  .logo img { height: 76px; width: auto; display: block; mix-blend-mode: multiply; }
+  .logo { display: block; width: min(440px, 100%); }
+  .logo img { width: 100%; height: auto; display: block; mix-blend-mode: multiply; }
   .quick { display: flex; gap: 24px; font-size: 0.9rem; }
   .quick a { text-decoration: none; color: var(--mid); border-bottom: 1px solid transparent; }
   .quick a:hover { color: var(--blue-3); border-bottom-color: var(--blue-3); }
@@ -188,7 +189,6 @@
   }
   @media (max-width: 520px) {
     body { font-size: 16px; }
-    .logo img { height: 58px; }
     .quick { display: none; }
     .tile h2 { font-size: 1.5rem; }
     .tile span.sub { font-size: 0.75rem; }
