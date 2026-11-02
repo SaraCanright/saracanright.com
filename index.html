@@ -1,742 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="color-scheme" content="light">
 <meta charset="UTF-8">
-<meta name="description" content="Sara Canright is an Organizational Effectiveness leader with 15+ years designing governance structures, leadership systems, and communication architecture across aerospace, life sciences, legal, and nonprofit organizations. AI-enhanced practice.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Sara Canright · Executive Partner · Strategy, Communication, Engagement &amp; Culture</title>
+<meta name="description" content="Executive partner to senior leaders, building the communication, engagement, and culture that turn strategy into results. 15+ years across aerospace, life sciences, legal, nonprofit, and financial services.">
 <meta name="author" content="Sara Canright">
 <meta name="robots" content="index, follow">
-<!-- Open Graph / LinkedIn / social sharing -->
-<meta property="og:title" content="Sara Canright · Organizational Effectiveness Professional">
-<meta property="og:description" content="15+ years building the governance structures, leadership systems, and communication architecture that turn strategy into consistent, measurable behavior. AI-enhanced OE practice.">
+<meta property="og:title" content="Sara Canright · Executive Partner · Strategy, Communication, Engagement &amp; Culture">
+<meta property="og:description" content="Leaders set direction. I build the communication, engagement, and culture that turn it into results.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saracanright.com">
 <meta property="og:image" content="https://saracanright.com/og_image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="icon" href="/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sara Canright · Organizational Effectiveness Professional</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@200;300;400;500&family=Azeret+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  /* Force light mode regardless of system setting */
-  :root {
-    color-scheme: light only;
-  }
   :root {
     --bg:        #edeae3;
-    --bg-card:   #e4e0d8;
-    --bg-deep:   #d8d3c8;
-    --white:     #f5f3ee;
-    --nav-bg:    #ece9e2;
-    --black:     #1a1a18;
+    --card:      #f5f3ee;
+    --stone:     #d8d3c8;
     --ink:       #2c2c28;
+    --black:     #1a1a18;
     --mid:       #5a5850;
     --muted:     #8a8680;
     --rule:      rgba(0,0,0,0.1);
-    --teal:      #3a6d96;
-    --teal-dark: #1e3a5a;
-    --teal-light:#6aaed4;
-    --teal-bg:   rgba(58,109,150,0.08);
-    --border:    rgba(58,109,150,0.2);
-    /* Fan blues */
-    --blue-light: #8bbdd9;
-    --blue-mid:   #3a6d96;
-    --blue-dark:  #1a3a58;
+    --blue-1:    #8bbdd9;
+    --blue-2:    #5b93bf;
+    --blue-3:    #3a6d96;
+    --blue-4:    #1a3a58;
   }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    overflow-x: hidden;
+    background: var(--bg); color: var(--ink);
+    font-family: 'DM Sans', sans-serif; font-weight: 300;
+    font-size: 17px; line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
   }
-  ::-webkit-scrollbar { width: 3px; }
-  ::-webkit-scrollbar-track { background: var(--bg); }
-  ::-webkit-scrollbar-thumb { background: var(--teal); }
-  /* ── NAV ── */
-  nav {
-    position: sticky; top: 0; z-index: 200;
-    background: #ece9e2;
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--rule);
-    padding: 0.5rem 2.5rem;
-    display: flex; justify-content: space-between; align-items: center;
-    min-height: 80px;
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header { padding: 40px 0 24px; }
+  .masthead { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .logo img { height: 76px; width: auto; display: block; mix-blend-mode: multiply; }
+  .quick { display: flex; gap: 24px; font-size: 0.9rem; }
+  .quick a { text-decoration: none; color: var(--mid); border-bottom: 1px solid transparent; }
+  .quick a:hover { color: var(--blue-3); border-bottom-color: var(--blue-3); }
+  nav.menu {
+    margin-top: 28px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 14px 4px; font-size: 0.92rem;
   }
-  .nav-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--muted);
+  nav.menu a { text-decoration: none; color: var(--ink); white-space: nowrap; }
+  nav.menu a:hover { color: var(--blue-3); }
+
+  /* Intro line */
+  .intro { padding: 44px 0 28px; }
+  .intro h1 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 400;
+    font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.2; color: var(--black);
+    max-width: 760px;
   }
-  /* ── LOGO ── */
-  .nav-logo {
-    display: flex; align-items: center;
-    height: 70px;
+  .intro h1 em { color: var(--blue-3); }
+
+  /* Tiles */
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-bottom: 72px; }
+  .tile {
+    position: relative; overflow: hidden; display: flex; flex-direction: column;
+    justify-content: flex-end; align-items: center; text-align: center;
+    aspect-ratio: 4 / 3; padding: 0 20px 26px; text-decoration: none; color: #fff;
+    box-shadow: 0 10px 24px rgba(26,58,88,0.18);
+    transition: transform .25s ease, box-shadow .25s ease;
   }
-  .nav-logo img {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    filter: contrast(1.03) saturate(1.05);
+  .tile:hover, .tile:focus-visible { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(26,58,88,0.26); outline: none; }
+  .t1 { background: linear-gradient(160deg, #a6cde3, #8bbdd9 60%, #74a8c9); }
+  .t2 { background: linear-gradient(160deg, #8bbad9, #72a7cf 60%, #5f95c0); }
+  .t3 { background: linear-gradient(160deg, #6f9fc4, #5a8db7 60%, #497ba6); }
+  .t4 { background: linear-gradient(160deg, #5584ab, #42739c 60%, #346489); }
+  .t5 { background: linear-gradient(160deg, #3d6a90, #2c597f 60%, #214a6d); }
+  .t6 { background: linear-gradient(160deg, #2a4f72, #1a3a58 60%, #112a42); }
+  .tile svg.mark {
+    position: absolute; top: 9%; left: 50%; transform: translateX(-50%);
+    width: 26%; height: auto; opacity: 0.16; stroke: #fff; fill: none; stroke-width: 6;
+    stroke-linecap: round; stroke-linejoin: round;
   }
-  /* ── CONTAINER ── */
-  .container { max-width: 920px; margin: 0 auto; padding: 0 2.5rem; }
-  /* ── HERO ── */
-  .hero { padding: 5.5rem 0 4rem; }
-  .hero-eyebrow {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.63rem; letter-spacing: 0.3em; text-transform: uppercase;
-    color: var(--teal); margin-bottom: 2rem;
-    display: flex; align-items: center; gap: 1rem;
-    opacity: 0; animation: fadeUp 0.6s ease 0.1s forwards;
+  .tile h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.6rem; line-height: 1.1; }
+  .tile .line { width: 70%; height: 1px; background: rgba(255,255,255,0.4); margin: 14px 0 12px; }
+  .tile span.sub { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; }
+
+  /* Sections */
+  section.panel { padding: 64px 0; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+  .panel-head { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  .swatch { width: 14px; height: 36px; flex-shrink: 0; }
+  .panel h2 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 2.2rem; color: var(--black); line-height: 1; }
+  .panel p { max-width: 700px; color: var(--mid); margin-bottom: 18px; }
+  .panel p.lead { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; line-height: 1.4; color: var(--ink); }
+  a.inline { color: var(--blue-3); text-decoration: underline; text-underline-offset: 3px; }
+  .top { display: inline-block; margin-top: 12px; font-size: 0.85rem; color: var(--muted); text-decoration: none; }
+  .top:hover { color: var(--blue-3); }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; max-width: 760px; }
+  .stat { background: var(--card); padding: 20px; border-left: 3px solid var(--blue-2); }
+  .stat b { display: block; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 2rem; color: var(--blue-4); line-height: 1.1; }
+  .stat span { font-size: 0.88rem; color: var(--mid); }
+
+  .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 8px; }
+  .quote { background: var(--card); padding: 24px; border-left: 3px solid var(--blue-2); display: flex; flex-direction: column; justify-content: space-between; }
+  .quote blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; line-height: 1.4; color: var(--ink); margin-bottom: 16px; }
+  .quote figcaption { font-size: 0.85rem; color: var(--muted); }
+  .quote figcaption b { display: block; color: var(--blue-4); font-weight: 500; }
+  .roles { list-style: none; max-width: 760px; }
+  .roles li { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .roles .r { font-weight: 500; color: var(--ink); }
+  .roles .c { color: var(--mid); font-size: 0.95rem; grid-column: 1; }
+  .roles .d { color: var(--muted); font-size: 0.9rem; grid-row: 1; grid-column: 2; white-space: nowrap; }
+  .roles .x { grid-column: 1 / -1; font-size: 0.93rem; color: var(--mid); margin-top: 4px; }
+  h3.small { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.4rem; margin: 40px 0 12px; color: var(--black); }
+  .earlier { margin-top: 20px; font-size: 0.97rem; }
+  .creds { list-style: none; max-width: 760px; }
+  .creds li { padding: 6px 0; color: var(--mid); }
+  .creds b { color: var(--ink); font-weight: 500; }
+
+  .cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .case { background: var(--card); padding: 28px; border-top: 4px solid var(--blue-3); }
+  .case:nth-child(4n+1) { border-top-color: var(--blue-1); }
+  .case:nth-child(4n+2) { border-top-color: var(--blue-2); }
+  .case:nth-child(4n) { border-top-color: var(--blue-4); }
+  .case h4 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.45rem; line-height: 1.2; color: var(--black); }
+  .case .where { font-size: 0.85rem; color: var(--muted); margin: 4px 0 14px; }
+  .case p { font-size: 0.97rem; margin-bottom: 10px; }
+  .case p.result { color: var(--blue-4); font-weight: 400; margin-bottom: 0; }
+
+  .case h4 + p { margin-top: 10px; }
+  .hbs { background: #1a3a58; color: #fff; padding: 28px; margin: 28px 0 8px; max-width: 860px; }
+  .hbs-head b { display: block; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.6rem; }
+  .hbs-head span { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+  .hbs p { color: rgba(255,255,255,0.88); margin: 16px 0 10px; }
+  .hbs ol { padding-left: 22px; }
+  .hbs li { margin-bottom: 8px; color: #fff; }
+  .tools { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; max-width: 860px; }
+  .tools li { background: var(--card); border: 1px solid rgba(58,109,150,0.25); padding: 6px 12px; font-size: 0.88rem; color: var(--blue-4); }
+  .limits { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+  .limits > div { background: var(--card); padding: 24px; }
+  .limits > div:last-child { border-left: 3px solid #1a3a58; }
+  .limits h4 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.35rem; margin-bottom: 10px; color: var(--black); }
+  .limits ul { padding-left: 18px; color: var(--mid); font-size: 0.95rem; }
+  .limits li { margin-bottom: 6px; }
+  .pf { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; align-items: start; }
+  .pf img, .thumbs img { width: 100%; height: auto; display: block; box-shadow: 0 8px 22px rgba(26,58,88,0.18); }
+  .pf .where { font-size: 0.85rem; color: var(--muted); }
+  .pf h4 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.6rem; line-height: 1.2; color: var(--black); margin: 4px 0 12px; }
+  .pf p { font-size: 0.97rem; }
+  .pf ul { padding-left: 18px; color: var(--mid); font-size: 0.95rem; margin-bottom: 20px; }
+  .pf li { margin-bottom: 6px; }
+  .pf li b { color: var(--ink); font-weight: 500; }
+  a.dl { display: inline-block; padding: 12px 20px; background: #1a3a58; color: #fff; text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+  a.dl:hover { background: #3a6d96; }
+  .thumbs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-top: 24px; }
+  .thumbs a { transition: transform .2s ease; }
+  .thumbs a:hover { transform: translateY(-3px); }
+  .soon { margin-top: 36px; background: var(--card); padding: 28px; max-width: 860px; position: relative; }
+  .soon-tag { display: inline-block; background: #8bbdd9; color: #1a3a58; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; margin-bottom: 10px; }
+  .soon h4 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.6rem; color: var(--black); margin-bottom: 8px; }
+  .soon p { font-size: 0.97rem; margin-bottom: 0; }
+  .contact-box { background: var(--blue-4); color: #fff; padding: 40px; max-width: 760px; }
+  .contact-box p { color: rgba(255,255,255,0.85); }
+  .contact-box a.btn {
+    display: inline-block; margin-top: 8px; padding: 12px 22px; background: var(--card);
+    color: var(--blue-4); text-decoration: none; font-weight: 500;
   }
-  .hero-eyebrow::before {
-    content: ''; display: block; width: 36px; height: 1px; background: var(--teal);
+  .contact-box a.btn:hover { background: var(--blue-1); }
+  .contact-box .loc { margin-top: 18px; font-size: 0.9rem; color: rgba(255,255,255,0.7); }
+
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--rule); }
+
+  @media (max-width: 820px) {
+    .tiles { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .tile { aspect-ratio: 4 / 5; padding-bottom: 24px; }
+    .tile svg.mark { top: 10%; width: 40%; }
+    .cases, .quotes, .limits, .pf { grid-template-columns: 1fr; }
+    .thumbs { grid-template-columns: repeat(3, 1fr); }
+    nav.menu { gap: 8px 18px; }
   }
-  h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.8rem, 6vw, 4.8rem);
-    font-weight: 300; line-height: 1.08;
-    color: var(--black); letter-spacing: -0.01em;
-    margin-bottom: 1.75rem;
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .logo img { height: 58px; }
+    .quick { display: none; }
+    .tile h2 { font-size: 1.5rem; }
+    .tile span.sub { font-size: 0.75rem; }
+    .stats { grid-template-columns: 1fr; }
+    .roles li { grid-template-columns: 1fr; }
+    .roles .d { grid-row: auto; grid-column: 1; }
+    .contact-box { padding: 28px 22px; }
   }
-  h1 em { font-style: italic; color: var(--teal); }
-  .word { display: inline-block; opacity: 0; transform: translateY(16px); margin-right: 0.28em; }
-  .hero-sub {
-    font-size: 1.05rem; color: var(--mid);
-    max-width: 580px; line-height: 1.85; margin-bottom: 1.5rem;
-    opacity: 0; animation: fadeUp 0.7s ease 0.9s forwards;
-  }
-  .hero-availability {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--teal-dark); margin-bottom: 3.5rem;
-    display: flex; align-items: center; gap: 0.75rem;
-    opacity: 0; animation: fadeUp 0.7s ease 1s forwards;
-  }
-  .hero-availability::before {
-    content: ''; display: block; width: 8px; height: 8px; border-radius: 50%;
-    background: var(--teal); flex-shrink: 0;
-  }
-  .hero-availability a { color: var(--teal); text-decoration: none; border-bottom: 1px solid var(--border); }
-  .hero-availability a:hover { border-bottom-color: var(--teal); }
-  /* Stats */
-  .hero-stats {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    border: 1px solid var(--rule);
-    background: var(--white);
-    opacity: 0; animation: fadeUp 0.7s ease 1.1s forwards;
-  }
-  .stat {
-    padding: 1.5rem 1.25rem;
-    border-right: 1px solid var(--rule);
-  }
-  .stat:last-child { border-right: none; }
-  .stat-n {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem; font-weight: 300;
-    color: var(--black); line-height: 1; margin-bottom: 0.4rem;
-  }
-  .stat-n .teal { color: var(--teal); font-style: italic; }
-  .stat-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--muted);
-  }
-  /* ── TICKER ── */
-  .ticker-wrap {
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    overflow: hidden; padding: 0.8rem 0;
-    background: var(--teal-bg);
-  }
-  .ticker-track {
-    display: flex; width: max-content;
-    animation: ticker 30s linear infinite;
-  }
-  .ticker-track:hover { animation-play-state: paused; }
-  .ticker-item {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--teal-dark); white-space: nowrap;
-    padding: 0 2.5rem;
-    display: flex; align-items: center; gap: 2.5rem;
-  }
-  .ticker-item::after { content: '·'; color: var(--teal); font-size: 1rem; }
-  @keyframes ticker {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  /* ── SECTION LABEL ── */
-  .section-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--teal); margin-bottom: 2.5rem;
-    display: flex; align-items: center; gap: 0.75rem;
-  }
-  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
-  /* ── PHILOSOPHY ── */
-  .philosophy { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .philosophy-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 300; font-style: italic; line-height: 1.5;
-    color: var(--black);
-    border-left: 2px solid var(--teal); padding-left: 2rem;
-    margin-bottom: 2.5rem;
-  }
-  .philosophy-body { font-size: 0.95rem; color: var(--mid); max-width: 680px; line-height: 1.9; }
-  .philosophy-body p + p { margin-top: 1.25rem; }
-  /* ── USE CASES ── */
-  .use-cases { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .use-cases h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem; font-weight: 300; color: var(--black); margin-bottom: 0.75rem;
-  }
-  .use-cases-intro { font-size: 0.9rem; color: var(--muted); margin-bottom: 3rem; max-width: 560px; }
-  .case-card {
-    background: var(--white); border: 1px solid var(--rule);
-    padding: 2rem 2.5rem; margin-bottom: 1px;
-    position: relative; overflow: hidden;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  .case-card::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
-    background: var(--teal); transform: scaleY(0); transform-origin: bottom;
-    transition: transform 0.35s ease;
-  }
-  .case-card:hover::before { transform: scaleY(1); }
-  .case-card:hover { border-color: rgba(58,109,150,0.3); box-shadow: 0 4px 20px rgba(58,109,150,0.07); }
-  .case-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-  .case-icon { width: 32px; height: 32px; flex-shrink: 0; color: var(--teal); }
-  .case-number {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.62rem; letter-spacing: 0.2em; color: var(--muted);
-  }
-  .case-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem; font-weight: 400; color: var(--black); margin-left: auto;
-  }
-  .case-org {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 0.75rem;
-  }
-  .case-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.25rem; }
-  .case-col-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--teal); margin-bottom: 0.5rem;
-  }
-  .case-col-text { font-size: 0.87rem; color: var(--mid); line-height: 1.8; }
-  /* ── TOOLS ── */
-  .tools { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .tools h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem; font-weight: 300; color: var(--black); margin-bottom: 2.5rem;
-  }
-  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
-  .tool-chip {
-    border: 1px solid var(--rule); padding: 1.25rem 1.5rem;
-    background: var(--white);
-    display: flex; flex-direction: column; gap: 0.75rem;
-    transition: border-color 0.3s, box-shadow 0.3s, transform 0.25s;
-    border-top: 2px solid transparent;
-  }
-  .tool-chip:hover {
-    border-top-color: var(--teal);
-    box-shadow: 0 4px 16px rgba(58,109,150,0.1);
-    transform: translateY(-2px);
-  }
-  .tool-chip-top { display: flex; align-items: center; gap: 0.75rem; }
-  .tool-icon { width: 18px; height: 18px; color: var(--teal); flex-shrink: 0; }
-  .tool-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem; color: var(--blue-dark); font-weight: 600;
-  }
-  .tool-use { font-size: 0.8rem; color: var(--mid); line-height: 1.6; }
-  /* ── PROMPT ── */
-  .prompt-section { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .prompt-section h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem; font-weight: 300; color: var(--black); margin-bottom: 0.75rem;
-  }
-  .prompt-intro { font-size: 0.9rem; color: var(--muted); margin-bottom: 2.5rem; max-width: 560px; }
-  .prompt-box {
-    background: var(--white); border: 1px solid var(--rule);
-    border-left: 2px solid var(--teal);
-    overflow: hidden;
-  }
-  .prompt-header {
-    padding: 1rem 2rem; border-bottom: 1px solid var(--rule);
-    display: flex; justify-content: space-between; align-items: center;
-    background: var(--bg-card);
-  }
-  .prompt-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink);
-  }
-  .prompt-badge {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--teal); border: 1px solid var(--teal); padding: 0.2rem 0.6rem;
-  }
-  .prompt-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem; font-style: italic;
-    color: var(--ink); line-height: 1.8; white-space: pre-line;
-    padding: 2rem 2.5rem; border-bottom: 1px solid var(--rule);
-  }
-  .prompt-output { padding: 1.75rem 2.5rem; display: grid; grid-template-columns: 110px 1fr; gap: 1.5rem; }
-  .prompt-output-label {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal);
-  }
-  .prompt-output-text { font-size: 0.88rem; color: var(--mid); line-height: 1.8; }
-  /* ── GUARDRAILS ── */
-  .guardrails { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .guardrails-inner { background: var(--white); border: 1px solid var(--rule); padding: 3rem; }
-  .guardrails h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem; font-weight: 300; color: var(--black); margin-bottom: 2rem;
-  }
-  .guardrails-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .guard-col h3 {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1rem;
-  }
-  .guard-col.can h3 { color: var(--teal); }
-  .guard-col.cannot h3 { color: var(--muted); }
-  .guard-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
-  .guard-list li { font-size: 0.88rem; color: var(--mid); padding-left: 1.25rem; position: relative; line-height: 1.65; }
-  .guard-col.can .guard-list li::before { content: '→'; position: absolute; left: 0; color: var(--teal); }
-  .guard-col.cannot .guard-list li::before { content: '·'; position: absolute; left: 0; color: var(--muted); }
-  /* ── CREDENTIALS ── */
-  .credentials { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .credentials h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem; font-weight: 300; color: var(--black); margin-bottom: 2.5rem;
-  }
-  /* ── CONTACT CTA ── */
-  .contact-cta { padding: 5rem 0; border-top: 1px solid var(--rule); }
-  .contact-inner {
-    background: var(--white); border: 1px solid var(--rule);
-    border-left: 2px solid var(--teal);
-    padding: 3rem;
-  }
-  .contact-inner h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem; font-weight: 300; color: var(--black); margin-bottom: 1rem;
-  }
-  .contact-inner p { font-size: 0.95rem; color: var(--mid); max-width: 620px; line-height: 1.9; margin-bottom: 2rem; }
-  .contact-link {
-    font-family: 'Azeret Mono', monospace;
-    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--teal); text-decoration: none;
-    border: 1px solid var(--teal); padding: 0.85rem 1.75rem;
-    display: inline-block;
-    transition: background 0.3s, color 0.3s;
-  }
-  .contact-link:hover { background: var(--teal); color: var(--white); }
-  /* ── FOOTER ── */
-  footer {
-    background: var(--blue-dark);
-    padding: 2.5rem;
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 1rem;
-  }
-  .footer-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem; color: rgba(255,255,255,0.7); letter-spacing: 0.1em;
-  }
-  .footer-contact { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-  .footer-contact a { color: var(--blue-light); text-decoration: none; }
-  .footer-contact a:hover { text-decoration: underline; }
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .reveal {
-    opacity: 0; transform: translateY(22px);
-    transition: opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1);
-  }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  /* ── RESPONSIVE ── */
-  @media (max-width: 640px) {
-    .hero-stats { grid-template-columns: 1fr 1fr; }
-    .stat:nth-child(2) { border-right: none; }
-    .stat:nth-child(3) { border-top: 1px solid var(--rule); }
-    .case-cols { grid-template-columns: 1fr; }
-    .case-header { flex-wrap: wrap; }
-    .case-title { margin-left: 0; }
-    .guardrails-grid { grid-template-columns: 1fr; }
-    .prompt-output { grid-template-columns: 1fr; }
-    nav { flex-direction: column; gap: 0.4rem; align-items: flex-start; }
-    .nav-label { display: none; }
-    .contact-inner, .guardrails-inner { padding: 2rem; }
-  }
-  /* ── DARK MODE OVERRIDE — force light always ── */
-  @media (prefers-color-scheme: dark) {
-    html, body {
-      background: #edeae3 !important;
-      color: #2c2c28 !important;
-    }
-    :root {
-      --bg:        #edeae3 !important;
-      --bg-card:   #e4e0d8 !important;
-      --bg-deep:   #d8d3c8 !important;
-      --white:     #f5f3ee !important;
-      --nav-bg:    #ece9e2 !important;
-      --black:     #1a1a18 !important;
-      --ink:       #2c2c28 !important;
-      --mid:       #5a5850 !important;
-      --muted:     #8a8680 !important;
-      --rule:      rgba(0,0,0,0.1) !important;
-    }
-    nav { background: #ece9e2 !important; }
-    .hero { background: var(--bg) !important; }
-    h1 { color: #1a1a18 !important; }
-    .hero-sub { color: #5a5850 !important; }
-    .hero-stats { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    .stat { border-color: rgba(0,0,0,0.1) !important; }
-    .stat-n { color: #1a1a18 !important; }
-    .stat-label { color: #8a8680 !important; }
-    .case-card { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    .case-title { color: #1a1a18 !important; }
-    .case-col-text { color: #5a5850 !important; }
-    .tool-chip { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    .tool-name { color: #1a1a18 !important; }
-    .tool-use { color: #5a5850 !important; }
-    .prompt-box { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    .prompt-header { background: #e4e0d8 !important; }
-    .prompt-text { color: #2c2c28 !important; }
-    .prompt-output { background: rgba(58,109,150,0.08) !important; }
-    .prompt-output-text { color: #5a5850 !important; }
-    .guardrails-inner { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    .guard-list li { color: #5a5850 !important; }
-    .philosophy-body { color: #5a5850 !important; }
-    .philosophy-quote { color: #1a1a18 !important; }
-    .contact-inner { background: #f5f3ee !important; border-color: rgba(0,0,0,0.1) !important; }
-    footer { background: #1e3a5a !important; }
-    .ticker-wrap { background: rgba(58,109,150,0.08) !important; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .tile { transition: none; }
   }
 </style>
 </head>
 <body>
-<!-- NAV -->
-<nav>
-  <div class="nav-logo"><img src="logo.png" alt="Sara Canright logo"></div>
-  <div class="nav-label">Organizational Effectiveness</div>
-</nav>
-<div class="container">
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-eyebrow">Organizational Effectiveness · MBA</div>
-    <h1 id="hero-headline" aria-label="I build the systems that make organizations work."></h1>
-    <p class="hero-sub">Fifteen-plus years designing the governance structures, leadership systems, and communication architecture that turn strategy into consistent, measurable behavior across aerospace, life sciences, legal, nonprofit, and financial services. Architecture over administration: I don't manage programs, I build the conditions organizations run on.</p>
-    <div class="hero-availability">Open to new opportunities · Remote or Colorado · <a href="mailto:SaraCanright@gmail.com">Get in touch</a></div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-n"><span class="counter" data-target="15" data-suffix="+">0</span></div>
-        <div class="stat-label">Years of practice</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n"><span class="counter" data-target="80" data-suffix="%+">0</span></div>
-        <div class="stat-label">Engagement · up from ~65%</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n"><span class="counter" data-target="80" data-suffix="–100">0</span></div>
-        <div class="stat-label">Leaders trained &amp; coached</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n"><span class="counter" data-target="400" data-suffix="+">0</span></div>
-        <div class="stat-label">Person global division served</div>
-      </div>
+
+<header class="wrap" id="home">
+  <div class="masthead">
+    <a class="logo" href="#home" aria-label="Sara Canright, home"><img src="logo.png" alt="Sara Canright, Organizational Effectiveness"></a>
+    <div class="quick">
+      <a href="mailto:SaraCanright@gmail.com">Email Me</a>
     </div>
-  </section>
-</div>
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker-track">
-    <div class="ticker-item">Organizational Design</div>
-    <div class="ticker-item">Change Management</div>
-    <div class="ticker-item">Leadership Systems</div>
-    <div class="ticker-item">Governance Frameworks</div>
-    <div class="ticker-item">Culture Transformation</div>
-    <div class="ticker-item">Executive Communication</div>
-    <div class="ticker-item">Operating Rhythm Design</div>
-    <div class="ticker-item">AI-Enhanced Practice</div>
-    <div class="ticker-item">Capability Architecture</div>
-    <div class="ticker-item">Strategic Alignment</div>
-    <div class="ticker-item">Organizational Design</div>
-    <div class="ticker-item">Change Management</div>
-    <div class="ticker-item">Leadership Systems</div>
-    <div class="ticker-item">Governance Frameworks</div>
-    <div class="ticker-item">Culture Transformation</div>
-    <div class="ticker-item">Executive Communication</div>
-    <div class="ticker-item">Operating Rhythm Design</div>
-    <div class="ticker-item">AI-Enhanced Practice</div>
-    <div class="ticker-item">Capability Architecture</div>
-    <div class="ticker-item">Strategic Alignment</div>
   </div>
-</div>
-<div class="container">
-  <!-- PHILOSOPHY -->
-  <section class="philosophy reveal">
-    <div class="section-label">How I Work</div>
-    <blockquote class="philosophy-quote">"Most organizations know where they want to go. What's usually missing is the architecture: clarity, accountability, and a shared understanding of who does what, how, and why."</blockquote>
-    <div class="philosophy-body">
-      <p>My work sits in the gap between strategy and behavior. Leadership sets direction; I build the operating infrastructure that makes it real: governance structures, team charters, escalation frameworks, operating rhythms, and the communication systems that carry direction consistently through an organization. When those systems exist, alignment stops depending on heroics and starts being how the organization runs.</p>
-      <p>I lead through influence rather than hierarchy. Embedded alongside GMs, VPs, and functional leaders, I facilitate the strategy sessions, coach the managers, design the frameworks, and hold the follow-through, so the work continues and scales beyond any single initiative or person.</p>
-    </div>
-  </section>
-  <!-- SELECTED WORK -->
-  <section class="use-cases reveal">
-    <div class="section-label">Selected Work</div>
-    <h2>What this looks like in practice</h2>
-    <p class="use-cases-intro">Four engagements that show the pattern: build the system, transfer the capability, make the results measurable.</p>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        <div class="case-number">01</div>
-        <div class="case-title">High-Performing Team Infrastructure</div>
-      </div>
-      <div class="case-org">Parker Hannifin · Braking Systems Division · Aerospace</div>
-      <div class="case-cols">
-        <div><div class="case-col-label">The work</div><div class="case-col-text">Built the implementation infrastructure for the division's High-Performing Team program: charters, KPIs, accountability frameworks, escalation paths, and standardized operating rhythms across all functions. Trained and coached 80–100 leaders and managers, and certified 6–10 internal trainers through train-the-trainer delivery.</div></div>
-        <div><div class="case-col-label">The result</div><div class="case-col-text">Engagement and participation rose to 80%+ from approximately 65%, and the capability stayed in the organization: internal trainers now carry the program forward without dependence on any single person or initiative.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        <div class="case-number">02</div>
-        <div class="case-title">Embedded Effectiveness Partnership</div>
-      </div>
-      <div class="case-org">BioMarin Pharmaceutical · Quality &amp; Compliance · Life Sciences</div>
-      <div class="case-cols">
-        <div><div class="case-col-label">The work</div><div class="case-col-text">Embedded effectiveness partner to a 400+ person globally distributed Quality and Compliance division. Designed onboarding frameworks, competency-based role clarity, and career pathing guidance; led governance and coordination for 20+ annual leadership and team convenings.</div></div>
-        <div><div class="case-col-label">The result</div><div class="case-col-text">Repeatable frameworks that improved consistency year-over-year, an internal mobility foundation for the division, and engagement and recognition programs that reinforced cohesion across a distributed global workforce.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-        <div class="case-number">03</div>
-        <div class="case-title">Board &amp; Executive Governance</div>
-      </div>
-      <div class="case-org">Benesch (Am Law 200) · Sustainable Apparel Coalition · Legal &amp; Nonprofit</div>
-      <div class="case-cols">
-        <div><div class="case-col-label">The work</div><div class="case-col-text">Architected governance infrastructure for board sessions, risk committees, and cross-functional leadership convenings, serving as trusted partner to CHRO, CFO, and Chief Risk Officer principals, and to the CEO and global board of a Fortune 500-facing nonprofit alliance.</div></div>
-        <div><div class="case-col-label">The result</div><div class="case-col-text">Board-level accountability systems, centralized document governance, and consistent strategic messaging across member organizations. High-stakes priorities moved from intent to execution with follow-through intact.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 8h10M7 12h7M7 16h5M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
-        <div class="case-number">04</div>
-        <div class="case-title">Executive Communication Architecture</div>
-      </div>
-      <div class="case-org">Cross-Industry · C-Suite Partnership</div>
-      <div class="case-cols">
-        <div><div class="case-col-label">The work</div><div class="case-col-text">Trusted ghostwriter for C-suite executives across multiple industries: board materials, all-hands narratives, change communications, and leadership messaging. Defined communication channel governance and built centralized knowledge ecosystems serving as an organization's single source of truth.</div></div>
-        <div><div class="case-col-label">The result</div><div class="case-col-text">A consistent, credible leadership voice that aligns organizations around shared priorities, with less redundant messaging and clearer line of sight from strategy to what each team does next.</div></div>
-      </div>
-    </div>
-  </section>
-  <!-- AI IN PRACTICE -->
-  <section class="use-cases reveal">
-    <div class="section-label">AI-Enhanced Practice</div>
-    <h2>Where AI enters the work</h2>
-    <p class="use-cases-intro">AI doesn't generate organizational wisdom. It multiplies the capacity of someone who already has it. Four domains where I leverage AI tools daily.</p>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 8h10M7 12h7M7 16h5M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
-        <div class="case-number">01</div>
-        <div class="case-title">Executive Communication &amp; C-Suite Ghostwriting</div>
-      </div>
-      <div class="case-cols">
-        <div><div class="case-col-label">How I use AI</div><div class="case-col-text">Draft-to-refined in a single working session. I use AI to generate first-pass board materials, all-hands narratives, and leadership communications, then apply the executive's voice, organizational context, and political awareness that only a trusted insider can provide.</div></div>
-        <div><div class="case-col-label">What it produces</div><div class="case-col-text">Board decks, CEO all-hands scripts, VP communications, and change narratives that used to require multiple revision cycles now move from brief to final-quality draft in hours, without losing the human voice or organizational intelligence at the center.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v3l2 2"/></svg>
-        <div class="case-number">02</div>
-        <div class="case-title">Organizational Diagnostics &amp; Pattern Synthesis</div>
-      </div>
-      <div class="case-cols">
-        <div><div class="case-col-label">How I use AI</div><div class="case-col-text">Engagement survey themes, leadership interview notes, and meeting transcripts that used to require days of synthesis get analyzed for patterns, gaps, and root causes in a structured working session. I frame the diagnostic brief, interrogate the output, and apply contextual interpretation AI cannot access.</div></div>
-        <div><div class="case-col-label">What it produces</div><div class="case-col-text">Diagnostic summaries with pattern analysis, prioritized organizational themes, and recommended intervention frameworks, delivered faster and with more structural precision than manual synthesis alone.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        <div class="case-number">03</div>
-        <div class="case-title">Governance &amp; Operating Framework Design</div>
-      </div>
-      <div class="case-cols">
-        <div><div class="case-col-label">How I use AI</div><div class="case-col-text">When designing team charters, accountability structures, operating rhythms, or decision frameworks, I use AI to generate structural options, then pressure-test them against the specific organizational context, culture, and leadership dynamics I know firsthand.</div></div>
-        <div><div class="case-col-label">What it produces</div><div class="case-col-text">HPT charters, governance frameworks, escalation matrices, and operating cadence designs that are structurally sound and contextually calibrated, not generic templates.</div></div>
-      </div>
-    </div>
-    <div class="case-card reveal">
-      <div class="case-header">
-        <svg class="case-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        <div class="case-number">04</div>
-        <div class="case-title">Change Management Planning</div>
-      </div>
-      <div class="case-cols">
-        <div><div class="case-col-label">How I use AI</div><div class="case-col-text">Stakeholder analysis, change narrative development, communication sequencing, and resistance mapping: AI generates comprehensive structural scaffolding quickly. I apply the organizational intelligence: who needs to hear what, when, from whom, and in what sequence.</div></div>
-        <div><div class="case-col-label">What it produces</div><div class="case-col-text">Change management plans, stakeholder communication matrices, and adoption roadmaps that move from concept to deployable framework in days, not weeks.</div></div>
-      </div>
-    </div>
-  </section>
-  <!-- TOOLS -->
-  <section class="tools reveal">
-    <div class="section-label">Toolkit</div>
-    <h2>Tools I use actively</h2>
-    <div class="tools-grid">
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><div class="tool-name">Claude (Anthropic)</div></div><div class="tool-use">Primary: drafting, synthesis, framework development, diagnostic analysis, long-form organizational writing</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><div class="tool-name">ChatGPT</div></div><div class="tool-use">Ideation, alternative framing, rapid structural options when divergent thinking is needed</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><div class="tool-name">Gemini (Google)</div></div><div class="tool-use">Research synthesis, cross-referencing multiple sources, rapid information gathering</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><div class="tool-name">Microsoft Copilot</div></div><div class="tool-use">Embedded AI within M365: drafting, summarizing, and accelerating output inside Word, PowerPoint, and SharePoint</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg><div class="tool-name">Otter.ai</div></div><div class="tool-use">Meeting capture and transcription, with transcripts fed into AI for theme synthesis and follow-up drafting</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M8 11h6M11 8v6"/></svg><div class="tool-name">Perplexity</div></div><div class="tool-use">Real-time research synthesis that surfaces current information, citations, and competitive intelligence faster than traditional search</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg><div class="tool-name">SharePoint</div></div><div class="tool-use">Centralized knowledge ecosystems, governance libraries, organizational single source of truth</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><div class="tool-name">LinkedIn Learning / Udemy</div></div><div class="tool-use">Self-directed development pathway curation aligned to organizational capability goals</div></div>
-    </div>
-  </section>
-  <!-- PROMPT -->
-  <section class="prompt-section reveal">
-    <div class="section-label">In Practice</div>
-    <h2>A prompt in action</h2>
-    <p class="prompt-intro">What sophisticated AI fluency looks like: not "write me a framework" but precision prompting that produces deployable work.</p>
-    <div class="prompt-box">
-      <div class="prompt-header">
-        <div class="prompt-label">Sample Prompt · Organizational Diagnostic Brief</div>
-        <div class="prompt-badge">Active Use</div>
-      </div>
-      <div class="prompt-text">You are helping me prepare a diagnostic summary for a 400-person global Quality &amp; Compliance division following an engagement survey cycle. The division operates across 12 countries with a matrix structure and a historically compliance-heavy culture attempting to shift toward higher engagement and shared accountability.
-Survey themes indicate: strong individual role clarity, weak cross-functional collaboration, low confidence in manager communication, and variable understanding of how team contributions connect to divisional strategy.
-Draft a diagnostic summary with three sections: (1) key findings with root cause framing, (2) recommended priority areas for intervention, ranked by organizational impact rather than ease of implementation, and (3) a change narrative paragraph leadership can use in a follow-up all-hands. Write for a VP audience. Be specific. Avoid generic recommendations.</div>
-      <div class="prompt-output">
-        <div class="prompt-output-label">Why this works</div>
-        <div class="prompt-output-text">The prompt provides organizational context AI cannot infer, specifies the audience and output format, defines the ranking criteria explicitly, and instructs away from the generic output most prompts produce. Precision in = precision out.</div>
-      </div>
-    </div>
-  </section>
-  <!-- GUARDRAILS -->
-  <section class="guardrails reveal">
-    <div class="section-label">Boundaries of the Practice</div>
-    <div class="guardrails-inner">
-      <h2>What AI can and cannot do in this work</h2>
-      <div class="guardrails-grid">
-        <div class="guard-col can">
-          <h3>What AI does well</h3>
-          <ul class="guard-list">
-            <li>Generate structural scaffolding for frameworks and documents rapidly</li>
-            <li>Surface patterns across large bodies of text or data</li>
-            <li>Draft communication at volume without losing coherence</li>
-            <li>Pressure-test a framework by generating counterarguments</li>
-            <li>Produce multiple structural alternatives for comparison</li>
-            <li>Accelerate first-draft quality on complex documents</li>
-          </ul>
-        </div>
-        <div class="guard-col cannot">
-          <h3>What only the practitioner can do</h3>
-          <ul class="guard-list">
-            <li>Read the real dynamics of a leadership team</li>
-            <li>Know which conversation needs to happen before the deck lands</li>
-            <li>Hold the room in a facilitated offsite when tension surfaces</li>
-            <li>Calibrate a message to the specific culture and political moment</li>
-            <li>Earn the trust that makes executive partnership possible</li>
-            <li>Decide what the organization needs vs. what it's asking for</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- CREDENTIALS -->
-  <section class="credentials reveal">
-    <div class="section-label">Credentials</div>
-    <h2>Foundation of the practice</h2>
-    <div class="tools-grid">
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg><div class="tool-name">MBA</div></div><div class="tool-use">AACSB-accredited program · Strategic Leadership Award, top 5% of graduating class</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><div class="tool-name">HBS Online</div></div><div class="tool-use">AI Essentials for Business, Harvard Business School Online · Completed 2026</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><div class="tool-name">EOS Fluency</div></div><div class="tool-use">Entrepreneurial Operating System: operating rhythm, accountability, and traction frameworks</div></div>
-      <div class="tool-chip"><div class="tool-chip-top"><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div class="tool-name">Psychometrics</div></div><div class="tool-use">MBTI, DiSC, and Enneagram applied to leadership coaching and evidence-based team design</div></div>
-    </div>
-  </section>
-  <!-- CONTACT -->
-  <section class="contact-cta reveal">
-    <div class="section-label">Next</div>
-    <div class="contact-inner">
-      <h2>The right fit is about scope, not title.</h2>
-      <p>I'm exploring roles where the primary deliverable is organizational health and systems performance: governance, leadership infrastructure, culture, and change. Remote or Colorado-based, in organizations navigating growth, integration, or transformation. If that sounds like the problem you're solving, I'd welcome the conversation.</p>
-      <a class="contact-link" href="mailto:SaraCanright@gmail.com">SaraCanright@gmail.com</a>
-    </div>
-  </section>
-</div>
-<!-- FOOTER -->
-<footer>
-  <div class="footer-name">Sara Canright · Organizational Effectiveness Professional</div>
-  <div class="footer-contact">
-    <a href="mailto:SaraCanright@gmail.com">SaraCanright@gmail.com</a>
+  <nav class="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#ai">AI Practice</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <h1>Leaders set direction. I build the communication, engagement, and culture that <em>turn it into results.</em></h1>
   </div>
-</footer>
-<script>
-  // Word-by-word headline
-  const headline = "I build the systems that make organizations work.";
-  const h1 = document.getElementById('hero-headline');
-  headline.split(' ').forEach((word, i) => {
-    // Insert line break before "organizations" so "organizations work." stays together
-    if (i === 6) {
-      const br = document.createElement('br');
-      h1.appendChild(br);
-    }
-    const span = document.createElement('span');
-    span.className = 'word';
-    if (i >= 6) { span.style.fontStyle = 'italic'; span.style.color = 'var(--teal)'; }
-    span.textContent = word;
-    span.style.animationDelay = `${0.3 + i * 0.08}s`;
-    span.style.animation = 'fadeUp 0.5s ease forwards';
-    h1.appendChild(span);
-  });
-  // Counting stats
-  function animateCounter(el) {
-    const target = parseInt(el.dataset.target);
-    const suffix = el.dataset.suffix || '';
-    const duration = 1800;
-    const start = performance.now();
-    const update = (now) => {
-      const p = Math.min((now - start) / duration, 1);
-      const ease = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(ease * target) + suffix;
-      if (p < 1) requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-  }
-  const statsObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      document.querySelectorAll('.counter').forEach(animateCounter);
-      statsObserver.disconnect();
-    }
-  }, { threshold: 0.4 });
-  statsObserver.observe(document.querySelector('.hero-stats'));
-  // Scroll reveals
-  const ro = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
-  }, { threshold: 0.07 });
-  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
-</script>
+
+  <div class="tiles">
+    <a class="tile t1" href="#about">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="34" r="16"/><path d="M18 88c4-20 17-30 32-30s28 10 32 30"/></svg>
+      <h2>About</h2><div class="line"></div><span class="sub">How I Work</span>
+    </a>
+    <a class="tile t2" href="#experience">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="12" width="56" height="76" rx="4"/><path d="M34 32h32M34 46h32M34 60h20"/></svg>
+      <h2>Experience</h2><div class="line"></div><span class="sub">Roles &amp; Credentials</span>
+    </a>
+    <a class="tile t3" href="#work">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M14 80l22-26 16 14 32-40"/><path d="M66 28h18v18"/></svg>
+      <h2>Work</h2><div class="line"></div><span class="sub">Selected Results</span>
+    </a>
+    <a class="tile t4" href="#portfolio">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="22" width="72" height="48" rx="3"/><path d="M50 70v14M34 86h32M28 56l14-14 10 10 20-20"/></svg>
+      <h2>Portfolio</h2><div class="line"></div><span class="sub">Work Samples</span>
+    </a>
+    <a class="tile t5" href="#ai">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="12"/><path d="M50 14v14M50 72v14M14 50h14M72 50h14M25 25l10 10M65 65l10 10M75 25L65 35M35 65L25 75"/></svg>
+      <h2>AI Practice</h2><div class="line"></div><span class="sub">How I Use AI</span>
+    </a>
+    <a class="tile t6" href="#contact">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="24" width="76" height="52" rx="4"/><path d="M14 28l36 28 36-28"/></svg>
+      <h2>Contact</h2><div class="line"></div><span class="sub">Get in Touch</span>
+    </a>
+  </div>
+
+  <section class="panel" id="about">
+    <div class="panel-head"><div class="swatch" style="background:var(--blue-1)"></div><h2>About</h2></div>
+    <p class="lead">Give me a problem, and I&rsquo;ll find a solution.</p>
+    <p>I&rsquo;ve spent more than fifteen years working alongside executives in aerospace, life sciences, legal, nonprofit, and financial services. Some problems show up in every industry, like headcount and business development. Others are unique to the work. Either way, I&rsquo;m at my most engaged when a leadership discussion escalates and stops making progress. I&rsquo;m an optimist that way: a stalled problem is an invitation.</p>
+    <p>My approach starts with listening. In one organization, breakdowns in engagement, quality, and understanding were pushing the business in the wrong direction, and leadership couldn&rsquo;t see why. I researched what was happening and held informal focus groups with the underperforming team. Then I showed leaders what I saw and heard, and designed a plan they could implement systematically to turn it around.</p>
+    <p>That&rsquo;s the pattern in all of my work: understand what is really happening, make it visible to the people who can act on it, and build the systems, communications, and follow-through that make change stick.</p>
+
+    <h3 class="small">What colleagues say</h3>
+    <div class="quotes">
+      <figure class="quote">
+        <blockquote>&ldquo;When you put your name on a deliverable alongside someone else&rsquo;s, you learn quickly whether you can trust their half of the work. With Sara, I never once felt the need to check her side before it went out.&rdquo;</blockquote>
+        <figcaption><b>M&aacute;t&eacute; Luk&aacute;cs</b>Project Manager, Parker Meggitt</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>&ldquo;Her Engagement team was the most active I&rsquo;ve seen amongst the other Parker sites I&rsquo;ve been to.&rdquo;</blockquote>
+        <figcaption><b>Ashley Knight</b>Lean Leader, Parker Meggitt</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>&ldquo;She has a sharp eye for detail and is always thinking a step ahead to the contingencies most people miss until it&rsquo;s too late.&rdquo;</blockquote>
+        <figcaption><b>Andrew McCausland</b>Engineering Project Manager</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="small">Outside of work</h3>
+    <p>I live in Breckenridge, Colorado, where you&rsquo;ll find me outdoors with my dogs. I paint, I&rsquo;m a beginner potter and ukulele player, and I thrift for artwork. Animal welfare matters a great deal to me; I spent two years volunteering at Pet Guards No-Kill Shelter, working with traumatized cats and placing them in forever homes.</p>
+    <p>Years ago, my husband and I bought a 104-year-old Dutch barge in Baltimore, refit it, and sailed it down the Chesapeake Bay and the Intracoastal Waterway to Sarasota Bay. I refinished the wood interior and helped sail her, and when a steering chain slipped in the Chesapeake, I freed and secured the swinging boom so we could steer to safety.</p>
+    <a class="top" href="#home">Back to top</a>
+  </section>
+
+  <section class="panel" id="experience">
+    <div class="panel-head"><div class="swatch" style="background:var(--blue-2)"></div><h2>Experience</h2></div>
+    <ul class="roles">
+      <li><span class="r">Communications &amp; Organizational Effectiveness Lead, partner to the General Manager</span><span class="d">2024 to 2026</span><span class="c">Parker Hannifin, Braking Systems Division (Aerospace &amp; Defense)</span><span class="x">Partner to the General Manager and leadership team of a 1,200-person division. Owned internal communications, operating rhythms, engagement, and change communications through the Meggitt integration.</span></li>
+      <li><span class="r">Executive Governance &amp; Organizational Effectiveness Partner</span><span class="d">2023</span><span class="c">Benesch, Friedlander, Coplan &amp; Aronoff LLP</span><span class="x">Partner to the CHRO, CFO, and Chief Risk Officer. Managed governance for an outside board the CFO served on, supported risk committee and leadership meetings, and centralized document governance.</span></li>
+      <li><span class="r">Independent Consultant, Communications &amp; Organizational Effectiveness</span><span class="d">2022 to 2023</span><span class="c">Independent Practice</span><span class="x">Assessed performance barriers, designed change strategies, coached leaders on communication and executive presence, and produced video content for clients.</span></li>
+      <li><span class="r">Senior Organizational Effectiveness Coordinator</span><span class="d">2016 to 2022</span><span class="c">BioMarin Pharmaceutical</span><span class="x">Operations, communications, and engagement partner to Quality and Compliance leadership for a 400+ person division of a company operating in 80+ countries.</span></li>
+      <li><span class="r">Senior Organizational &amp; Executive Effectiveness Lead</span><span class="d">2018 to 2019</span><span class="c">Eqius Partners</span><span class="x">Built communication architecture, governance protocols, and information systems from the ground up for the C-suite of a $1B+ wealth management firm.</span></li>
+      <li><span class="r">Executive Governance &amp; Communications Lead</span><span class="d">2018</span><span class="c">Sustainable Apparel Coalition</span><span class="x">Managed governance and communications for the CEO and global Board of a sustainability alliance of Fortune 500 companies.</span></li>
+      <li><span class="r">Senior Executive &amp; Board Governance Lead</span><span class="d">2014 to 2016</span><span class="c">Del Monte Foods</span><span class="x">Partnered with the COO and Chairman&rsquo;s Office on board governance, M&amp;A materials, and executive communications during organizational transformation.</span></li>
+    </ul>
+    <p class="earlier">Earlier in my career, I worked across large corporations, small local businesses, consulting, wellness, and commercial advertising and design arts. That range is why I can sit with a shop-floor team in the morning and a board in the afternoon.</p>
+    <h3 class="small">Education &amp; Credentials</h3>
+    <ul class="creds">
+      <li><b>MBA, International Leadership</b> · Dominican University of California · Strategic Leadership Award, the program&rsquo;s highest recognition · Top 5% of graduating class · Led an international consulting engagement in Ecuador</li>
+      <li><b>BA, Business &amp; Leadership</b> · Dominican University of California · Summa Cum Laude · Alpha Sigma Lambda Honor Society</li>
+      <li><b>AI Essentials for Business</b> · Harvard Business School Online · Completed 2026</li>
+      <li><b>Change Management</b> · ADKAR · CCMP in progress</li>
+    </ul>
+    <a class="top" href="#home">Back to top</a>
+  </section>
+
+  <section class="panel" id="work">
+    <div class="panel-head"><div class="swatch" style="background:var(--blue-3)"></div><h2>Work</h2></div>
+    <div class="cases">
+      <div class="case">
+        <h4>Integration Change Communications</h4>
+        <div class="where">Parker Hannifin · Aerospace &amp; Defense</div>
+        <p>Led change communications for the integration of Meggitt into Parker, an acquisition that added roughly a third of the division&rsquo;s workforce. Coordinated messages, FAQs, and leader materials across functions so employees understood new structures, systems, and ways of working.</p>
+        <p class="result">One consistent story for office and shop-floor employees through a major transition.</p>
+      </div>
+      <div class="case">
+        <h4>Engagement &amp; Culture</h4>
+        <div class="where">Parker Hannifin · Aerospace &amp; Defense</div>
+        <p>Built and led the division&rsquo;s employee engagement team: recognition, monthly themes, community giving, and company events, supported by manager playbooks and engagement cadences.</p>
+        <p class="result">Participation and engagement rose from about 65% to over 80%.</p>
+      </div>
+      <div class="case">
+        <h4>Strategy Into Execution</h4>
+        <div class="where">Parker Hannifin · Aerospace &amp; Defense</div>
+        <p>Partner to the General Manager and leadership team. Designed the division&rsquo;s operating rhythms, team charters, KPIs, and escalation frameworks, and facilitated leadership offsites that turned strategy into priorities with clear owners. Trained 80 to 100 leaders and certified internal trainers.</p>
+        <p class="result">Strategy linked to leadership routines, with capability that runs without central support.</p>
+      </div>
+      <div class="case">
+        <h4>$2.25M State Grant</h4>
+        <div class="where">Parker Hannifin · Aerospace &amp; Defense</div>
+        <p>Sole-authored a state grant application for building improvements, and supported a multi-year facility optimization initiative with JobsOhio and Team NEO.</p>
+        <p class="result">Awarded $2.25M.</p>
+      </div>
+      <div class="case">
+        <h4>Global Life Sciences Partnership</h4>
+        <div class="where">BioMarin Pharmaceutical · Life Sciences</div>
+        <p>Partner to Quality and Compliance leadership for a 400+ person division across 80+ countries. Designed onboarding, role clarity, and career-pathing guidance; ran 20+ leadership and team meetings a year with repeatable frameworks; directed contract trainers and event vendors; prepared the division VP as a speaker; and managed consultant contract life cycles.</p>
+        <p class="result">Consistent, repeatable leadership routines in a highly regulated, distributed organization.</p>
+      </div>
+      <div class="case">
+        <h4>Board &amp; Executive Governance</h4>
+        <div class="where">Benesch · Sustainable Apparel Coalition · Del Monte Foods · Eqius Partners</div>
+        <p>Managed governance for boards, committees, and leadership teams: an outside board a law firm CFO served on, the global board of a sustainability alliance of Fortune 500 companies, and a consumer goods company in transformation, including M&amp;A materials and executive communications. At a $1B+ wealth management firm, built the C-suite&rsquo;s operating systems from the ground up.</p>
+        <p class="result">Delivered $500K+ in savings at Del Monte through an expense audit and vendor renegotiation.</p>
+      </div>
+    </div>
+    <a class="top" href="#home">Back to top</a>
+  </section>
+
+  <section class="panel" id="portfolio">
+    <div class="panel-head"><div class="swatch" style="background:#42739c"></div><h2>Portfolio</h2></div>
+    <div class="pf">
+      <a class="pf-hero" href="portfolio/change-campaign-1.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-1.jpg" alt="Title slide: Leading Change to a New Strategic Direction, a 90-day change management campaign"></a>
+      <div class="pf-text">
+        <div class="where">Work sample · Change management · 7 slides</div>
+        <h4>Leading Change to a New Strategic Direction</h4>
+        <p>A 90-day, ADKAR-aligned campaign to move a global workforce from awareness to adoption of a new strategic direction. It answers three questions for every employee: where are we headed, why does it matter, and what is my role.</p>
+        <ul>
+          <li><b>Lead with decisions:</b> show real choices and tradeoffs, not slogans.</li>
+          <li><b>Equip managers first:</b> a briefing, toolkit, and 30-minute team conversation guide.</li>
+          <li><b>Listen and report back:</b> pulses and listening sessions with a visible &ldquo;you said, we did&rdquo; loop.</li>
+          <li><b>Measure what matters:</b> understanding, adoption, and trust, not only reach.</li>
+        </ul>
+        <a class="dl" href="portfolio/Sara_Canright_Change_Management_Campaign_Sample.pptx" download>Download the deck (PowerPoint)</a>
+      </div>
+    </div>
+    <div class="thumbs">
+      <a href="portfolio/change-campaign-2.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-2.jpg" alt="Slide 2: strategy, three questions and three strategic moves" loading="lazy"></a>
+      <a href="portfolio/change-campaign-3.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-3.jpg" alt="Slide 3: audiences by distance from the change and role level" loading="lazy"></a>
+      <a href="portfolio/change-campaign-4.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-4.jpg" alt="Slide 4: the 90-day arc, understand, connect, embed" loading="lazy"></a>
+      <a href="portfolio/change-campaign-5.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-5.jpg" alt="Slide 5: leaders model it, managers translate it" loading="lazy"></a>
+      <a href="portfolio/change-campaign-6.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-6.jpg" alt="Slide 6: measurement scorecard and key risks" loading="lazy"></a>
+      <a href="portfolio/change-campaign-7.jpg" target="_blank" rel="noopener"><img src="portfolio/change-campaign-7.jpg" alt="Slide 7: manager conversation guide" loading="lazy"></a>
+    </div>
+    <div class="soon">
+      <div class="soon-tag">Coming soon</div>
+      <h4>Work, Figured Out</h4>
+      <p>A short video series answering the workplace questions managers ask most, on communication, change management, conflict, and leading teams. Each week takes one question and works through it: the root cause, a practical framework, how to put it into practice, and the pitfall to avoid. Short episodes on LinkedIn, collected weekly on YouTube and here.</p>
+    </div>
+    <a class="top" href="#home">Back to top</a>
+  </section>
+
+  <section class="panel" id="ai">
+    <div class="panel-head"><div class="swatch" style="background:#2c597f"></div><h2>AI Practice</h2></div>
+    <p class="lead">AI doesn&rsquo;t supply judgment. It multiplies the capacity of someone who already has it.</p>
+    <p>I use AI every day to draft, analyze, and build faster, and I bring the context about people, culture, and timing that the tools cannot.</p>
+
+    <div class="hbs">
+      <div class="hbs-head"><b>AI Essentials for Business</b><span>Harvard Business School Online · Professors Karim Lakhani and Marco Iansiti · Completed 2026</span></div>
+      <p>I enrolled expecting a course about technology and found a course about organizations. Three takeaways shape how I work:</p>
+      <ol>
+        <li>The hardest part of becoming an AI-powered organization is redesigning the operating model so data, decisions, and learning can flow, not the algorithms.</li>
+        <li>AI raises the stakes on leadership. Governance, ethics, and change management decide whether the technology creates value or chaos.</li>
+        <li>The organizations that win will be the ones whose culture lets people put AI to work.</li>
+      </ol>
+    </div>
+
+    <h3 class="small">How I use it</h3>
+    <div class="cases">
+      <div class="case">
+        <h4>Executive &amp; Leadership Communications</h4>
+        <p>First drafts of all-hands content, leadership updates, talking points, and meeting minutes, refined with the leader&rsquo;s voice and the organizational context only an insider has.</p>
+      </div>
+      <div class="case">
+        <h4>Frameworks, Plans &amp; Research</h4>
+        <p>Structural options for governance frameworks, offsite plans, and change plans, pressure-tested against the real organization. Research and grant writing, including the $2.25M state grant.</p>
+      </div>
+      <div class="case">
+        <h4>Building Capability in Others</h4>
+        <p>Built custom GPTs and templates that junior team members used to lead High-Performing Team sessions, and coached colleagues on better prompting, within an approved-tool policy for defense work.</p>
+      </div>
+      <div class="case">
+        <h4>Automation &amp; Verification</h4>
+        <p>Built a Power Automate workflow linking Microsoft Forms and SharePoint to automate a recurring request process. I verify output across multiple tools and require linked sources.</p>
+      </div>
+    </div>
+
+    <h3 class="small">Tools</h3>
+    <ul class="tools">
+      <li>ChatGPT &amp; custom GPTs</li><li>Claude Projects</li><li>Microsoft Copilot agents</li><li>Gemini Gems</li><li>Perplexity</li><li>Otter.ai</li><li>Power Automate</li><li>Power BI</li><li>SharePoint</li><li>Canva</li><li>Miro</li>
+    </ul>
+
+    <div class="limits">
+      <div><h4>Where AI helps</h4><ul><li>Structure and first drafts, fast</li><li>Patterns across large amounts of text</li><li>Multiple options to compare</li><li>Counterarguments to test a plan</li></ul></div>
+      <div><h4>Where judgment leads</h4><ul><li>Reading the real dynamics of a leadership team</li><li>Knowing which conversation has to happen first</li><li>Fitting a message to the culture and the moment</li><li>Earning the trust that executive partnership needs</li></ul></div>
+    </div>
+    <a class="top" href="#home">Back to top</a>
+  </section>
+
+  <section class="panel" id="contact">
+    <div class="panel-head"><div class="swatch" style="background:#1a3a58"></div><h2>Contact</h2></div>
+    <div class="contact-box">
+      <p>I am exploring director-level roles as an executive partner to senior leaders, with a focus on strategy, communication, engagement, and culture. If that is the problem you are solving, I would welcome the conversation.</p>
+      <a class="btn" href="mailto:SaraCanright@gmail.com">SaraCanright@gmail.com</a>
+      <div class="loc">Based in Breckenridge, Colorado · Remote or Mountain time</div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Sara Canright · Executive Partner · Strategy, Communication, Engagement &amp; Culture</footer>
+
 </body>
 </html>
